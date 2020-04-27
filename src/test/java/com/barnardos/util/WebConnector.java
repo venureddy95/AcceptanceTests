@@ -135,11 +135,11 @@ public class WebConnector {
         }
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
-        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     }
 
     public static String generateString() {
-        String uuid = UUID.randomUUID().toString().replaceAll("-", "");
+        String uuid = UUID.randomUUID().toString().replaceAll("-", "").substring(0, 7);
         return uuid;
     }
 
@@ -153,6 +153,10 @@ public class WebConnector {
 
     public void scrollDown() {
         ((JavascriptExecutor)driver).executeScript("scroll(0,500)");
+    }
+
+    public void scrollDown(String howMuch) {
+        ((JavascriptExecutor)driver).executeScript("scroll(0,1000)");
     }
 
     public void scrollEOP() {
@@ -193,7 +197,7 @@ public class WebConnector {
         driver.findElement(element).sendKeys(Keys.SPACE);
     }
 
-    protected void pressTabOut(By element){
+    public void pressTabOut(By element){
         driver.findElement(element).sendKeys(Keys.TAB);
     }
 

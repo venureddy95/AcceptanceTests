@@ -1,211 +1,15 @@
-//package com.barnardos.pageobjects;
-//import java.util.*;
-//import com.barnardos.util.WebConnector;
-//import org.openqa.selenium.By;
-//import org.openqa.selenium.Keys;
-//
-//public class donatePageObjects extends WebConnector {
-//
-//    private By cookiesContinueButton = By.xpath("//button[@class='cookie-policy__button']");
-//    private By singleDonation = By.xpath("//div[@class='donate-block__period']//label[2]");
-//    private String donationAmountPicker = "//div[@class='donate-block__choice']/label[%s]/span";
-//    private String fixedDonationAmount = "//div[@class='donate-block__choice']/label[%s]/input";
-//    private By anyAmount = By.xpath("//div[@class='donate-block__choice']/label[5]/input/span");
-//    private By donateTodayButton = By.xpath("//div[@class='donate-block__submit']//span");
-//    private By donationAmount = By.id("don_amount");
-//    private By title = By.id("pd_title");
-//    private By firstName = By.id("pd_forename");
-//    private By lastName = By.id("pd_surname");
-//    private By emailAddress = By.id("pd_email");
-//    private By contactNumber = By.id("pd_evephone");
-//    private By AddressLine1 = By.id("pd_addline1");
-//    private By AddressLine2 = By.id("pd_addline2");
-//    private By town = By.id("pd_addtown");
-//    private By county = By.id("pd_addcounty");
-//    private By postCode = By.id("pd_addpostcode");
-//    private By country = By.id("pd_addcountry");
-//    private By u16Age = By.id("nom_age");
-//    private By kit_email = By.id("pd_cc_email");
-//    private By kit_sms = By.id("pd_cc_sms");
-//    private By kit_post = By.id("pd_cc_post");
-//    private By kit_phone = By.id("pd_cc_phone");
-//    private By giftAid = By.id("giftAid_IncomeAgreement");
-//    private By moreAboutGiftAid = By.partialLinkText("/donate/about-gift-aid");
-//    private By donateByCard = By.xpath("//input[@value='Donate by card'][@type='submit']");
-//    private By donateByPayPal = By.xpath("//input[@value='PayPal']");
-//    private By cardDetailsPage = By.id("nomAccordion");
-//    private By cardDetailsPageTitle = By.xpath("//h2[@class='nomTitle']");
-//    private By iFrame = By.xpath("//iframe[@class='sagePayIframe']");
-//    private By visaDebitCard = By.xpath("//input[@id='1']");
-//    private By cardNumber = By.xpath("//input[@name='cardnumber']");
-//    private By securityCode = By.xpath("//input[@name='securitycode']");
-//    private By cardAddress = By.xpath("//input[@name='cardaddress']");
-//    private By cardCityTown = By.xpath("//input[@name='cardcity']");
-//    private By cardPostCode = By.xpath("//input[@name='cardpostcode']");
-//    private By continueButton = By.xpath("//img[@name='proceed']");
-//    private By vendorName = By.xpath("//input[@id='field_vendor']");
-//    private By vendorAmount = By.xpath("//input[@id='field_amount']");
-//    private By vendorDate = By.xpath("//input[@id='field_date']");
-//    private By vendorCard = By.xpath("//input[@id='field_pan']");
-//    private By vendorPassword = By.xpath("//input[@id='field_password']");
-//    private By vendorSubmit = By.xpath("//input[@id='submit-button']");
-//    private By successfullPaymentTitle = By.xpath("//h1[@class='hero-text__title']");
-//    private By successfullPaymentAmount = By.xpath("//p[@class='nomDonationAmount']");
-//
-////    input@id=field_vendor, value=barnardos
-////    input@id=field_amount, value=5.0 GBP
-////    input@id=field_date , value=Fri Jan 04 11:23:55 GMT 2019
-////    input@id=field_pan, value=xxxxxxxxxx0006
-////    input@id=field_password
-////    input@id=submit-button
-////    h1@class=hero-text__title, Thank You, Ve
-////    p@class=nomDonationAmount, £5.00
-////    div@class=nomContent, h5=Thank You, Ve
-////    /p=Your donation has been successful and will make an immediate difference.
-//
-//    public void acceptCookies() {
-//        scrollDown();
-//        click(cookiesContinueButton);
-//    }
-//
-//    public boolean isDonatePage() {
-//        return IsElementPresent(singleDonation);
-//    }
-//
-//    public String pickDonationAmount(int randomNum) {
-//        click(singleDonation);
-//        click(By.xpath(String.format(donationAmountPicker, randomNum)));
-//        return getValue(By.xpath(String.format(fixedDonationAmount, randomNum)));
-//    }
-//
-//    public void clickOnDonateToday(int randomNum) {
-//        clickByAction(donateTodayButton);
-//    }
-//
-//    public boolean IsDonationDetailsPage() {
-//        return IsElementPresent(donationAmount);
-//    }
-//
-//    public String getDonationAmount() {
-//        return getValue(donationAmount);
-//    }
-//
-////    public String title() {
-////
-////    }
-//
-//
-//    public void enterFirstName(String fname) {
-//        typeText(firstName, fname);
-//    }
-//
-//    public void enterLastName(String lname) {
-//        typeText(lastName, lname);
-//    }
-//
-//    public void enterEmail(String email) {
-//        email = generateString() + email;
-//        typeText(emailAddress, email);
-//    }
-//
-//    public void enterContactNumber(String phone) {
-//        typeText(contactNumber, phone);
-//    }
-//
-//    public void enterAddressLine1(String line1) {
-//        typeText(AddressLine1, line1);
-//    }
-//
-//    public void enterAddressLine2(String line2) {
-//        typeText(AddressLine2, line2);
-//    }
-//
-//    public void enterTown(String Town) {
-//        typeText(town, Town);
-//    }
-//
-//    public void enterCounty(String County) {
-//        typeText(county, County);
-//    }
-//
-//    public void enterPostCode(String postcode) {
-//        typeText(postCode, postcode);
-//    }
-//
-//    public void tickGiftAidCheckbox() {
-//        tickCheckBox(giftAid);
-//    }
-//
-//    public void clickOnDonateByCard() throws Throwable {
-//        scrollEOP();
-//        Thread.sleep(1000);
-//        clickByAction(donateByCard);
-//    }
-//
-//    public void clickOnDonateByPaypal() {
-//        click(donateByPayPal);
-//    }
-//
-//    public boolean isCardDetailsPage() {
-//        return IsElementPresent(cardDetailsPage);
-//    }
-//
-//    public String getCardDetailsPageTitle() {
-//        return getText(cardDetailsPageTitle);
-//    }
-//
-//    public void switchToiFrame() {
-//        scrollDown();
-//        switchToIframe(iFrame);
-//    }
-//
-//    public void switchToDefaultFrame() {
-//        switchToDafaultframe();
-//    }
-//
-//    public void selectVisaDebitCard() {
-//        clickByAction(visaDebitCard);
-//    }
-//
-//    public void enterVisaDebitCardNumber() {
-//        typeText(cardNumber, "4929000000006");
-//    }
-//
-//    public void enterSecurityCode() {
-//            typeText(securityCode, "123");
-//    }
-//
-//    public void clickContinueButton() {
-//        //clickByAction(continueButton);
-//        pressEnter(continueButton);
-//    }
-//
-//    public void enterSecurityPassword() {
-//        typeText(vendorPassword, "password");
-//    }
-//
-//    public void clickVendorSubmit() {
-//        pressEnter(vendorSubmit);
-//    }
-//
-//    public boolean IsDonationSuccessful() {
-//        return IsElementPresent(successfullPaymentTitle);
-//    }
-//
-//    public String getDonationSuccessfulAmount() {
-//        return getText(successfullPaymentAmount);
-//    }
-//}
 package com.barnardos.pageobjects;
-import java.util.*;
 import com.barnardos.util.WebConnector;
-import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
+
+import java.util.Arrays;
+import java.util.Random;
+import java.util.List;
 
 public class donatePageObjects extends WebConnector {
 
-    //private By cookiesContinueButton = By.xpath("//button[@class='cookie-policy__button']");
     private By cookiesContinueButton = By.xpath("//div[@class='cookie-policy__body']/button");
     private By donateButtonInMenu = By.xpath("//div[@id='main-menu']/a/span");
     private By singleDonation = By.xpath("//div[contains(@class, 'donate-block__period')]//label[@class='donate-block__period--last-label']");
@@ -214,63 +18,67 @@ public class donatePageObjects extends WebConnector {
     private String fixedDonationAmount = "//div[@class='donate-block__choice js-donate-block__choice']/fieldset[%s]//label[%s]/input";
     private By anyAmount = By.xpath("//div[@class='donate-block__choice-wrap']/label[5]/input/span");
     private By donateTodayButton = By.xpath("//div[contains(@class, 'donate-block__submit')]//span");
-    private By donationAmount = By.id("don_amount");
-    private By title = By.id("pd_title");
-    private By firstName = By.id("pd_forename");
-    private By lastName = By.id("pd_surname");
-    private By emailAddress = By.id("pd_email");
-    private By contactNumber = By.id("pd_evephone");
-    private By promptedQuestion = By.id("pd_userMotivation");
-    private By AddressLine1 = By.id("pd_addline1");
-    private By AddressLine2 = By.id("pd_addline2");
-    private By town = By.id("pd_addtown");
-    private By county = By.id("pd_addcounty");
-    private By postCode = By.id("pd_addpostcode");
-    private By country = By.id("pd_addcountry");
-    private By u16Age = By.id("nom_age");
-    private By kit_email = By.id("pd_cc_email");
-    private By kit_sms = By.id("pd_cc_sms");
-    private By kit_post = By.id("pd_cc_post");
-    private By kit_phone = By.id("pd_cc_phone");
-    private By giftAid = By.id("giftAid_IncomeAgreement");
+    private By donationAmount = By.id("donation_amount");
+    private By title = By.id("donation_title");
+    private By firstName = By.id("donation_first_name");
+    private By lastName = By.id("donation_surname");
+    private By emailAddress = By.id("donation_email_address");
+    private By contactNumber = By.id("donation_phone_number");
+    private String promptedQuestion = ("//label[contains(.,'%s')]");
+    private By AddressLine1 = By.id("donation_mailing_street_1");
+    private By AddressLine2 = By.id("donation_mailing_street_2");
+    private By town = By.id("donation_mailing_city");
+    private By postCode = By.id("donation_mailing_postal_code");
+    private By country = By.id("donation_mailing_country");
+    private By u16Age = By.id("donation_under_16");
+    private By kit_email = By.id("donation_email_consent");
+    private By kit_sms = By.id("donation_sms_consent");
+    private By kit_post = By.id("donation_mail_consent");
+    private By kit_phone = By.id("donation_phone_consent");
+    private By donatingMyOwnMoney = By.id("donation_type_own_money");
+    private By donatingFromFundraisingEventOrCollection = By.id("donation_type_event");
+    private By informationAboutTheFundraisingEvent = By.id("event_information");
+    private By donatingOnBehalfOfOrganisation = By.id("donation_type_organisation");
+    private By organisationName = By.id("organisation_name");
+    private By organisationAddress1 = By.id("organisation_address_1");
+    private By organisationAddress2 = By.id("organisation_address_2");
+    private By organisationTown = By.id("organisation_town");
+    private By organisationCounty = By.id("organisation_county");
+    private By organisationPostcode = By.id("organisation_postcode");
+    private By organisationCountry = By.id("donation_organisation_country");
+
+    private By giftAid = By.id("donation_gift_aid_status");
     private By moreAboutGiftAid = By.partialLinkText("/donate/about-gift-aid");
-    private By donateByCard = By.xpath("//input[@value='Donate by card'][@type='submit']");
+    private By donateButton = By.xpath("//input[@value='Donate']");
     private By confirmDonation = By.xpath("//input[@value='Confirm donation'][@type='submit']");
     private By donateByPayPal = By.xpath("//input[@value='PayPal']");
-    private By cardDetailsPage = By.id("nomAccordion");
-    private By cardDetailsPageTitle = By.xpath("//h2[@class='nomTitle']");
-    private By iFrame = By.xpath("//iframe[@class='sagePayIframe']");
-    private By visaDebitCard = By.xpath("//input[@id='1']");
-    private By cardNumber = By.xpath("//input[@name='cardnumber']");
-    private By securityCode = By.xpath("//input[@name='securitycode']");
-    private By cardAddress = By.xpath("//input[@name='cardaddress']");
-    private By cardCityTown = By.xpath("//input[@name='cardcity']");
-    private By cardPostCode = By.xpath("//input[@name='cardpostcode']");
-    private By continueButton = By.xpath("//img[@name='proceed']");
-    private By vendorName = By.xpath("//input[@id='field_vendor']");
-    private By vendorAmount = By.xpath("//input[@id='field_amount']");
-    private By vendorDate = By.xpath("//input[@id='field_date']");
-    private By vendorCard = By.xpath("//input[@id='field_pan']");
-    private By vendorPassword = By.xpath("//input[@id='field_password']");
-    private By vendorSubmit = By.xpath("//input[@id='submit-button']");
-    private By successfullPaymentTitle = By.xpath("//h1[@class='title']");
-    private By successfullPaymentAmount = By.xpath("//p[@class='nomDonationAmount']");
+    private By cardDetailsPage = By.xpath("//h1");
+    private By cardDetailsPageTitle = By.xpath("//h1");
+    private By continueToPayment = By.xpath("//input[@value='Continue to payment'][@type='submit']");
+    private By visaDebitCard = By.xpath("//span[contains(.,'Visa')]");
+    private By cardNumber = By.id("form-card_details.field-pan");
+    private By expiryMonth = By.id("form-card_details.field-expiry_mm");
+    private By expiryYear = By.id("form-card_details.field-expiry_yy");
+    private By securityCode = By.id("form-card_details.field-cvc");
+    private By confirmCardDetailsButton = By.xpath("//button[@name='action'][@value='proceed']");
+    private By reviewPaymentTitle = By.xpath("//h1[@class='page__title']");
+    private By successfulPaymentTitle = By.xpath("//h1[@class='Title']");
+    private By successfulPaymentAmount = By.xpath("//h2");
     private By accountHolderName = By.id("accountName");
-    private By accountSortCode = By.id("accountSortCode");
-    private By accountNumber = By.id("accountNumber");
 
 
-
-//    input@id=field_vendor, value=barnardos
-//    input@id=field_amount, value=5.0 GBP
-//    input@id=field_date , value=Fri Jan 04 11:23:55 GMT 2019
-//    input@id=field_pan, value=xxxxxxxxxx0006
-//    input@id=field_password
-//    input@id=submit-button
-//    h1@class=hero-text__title, Thank You, Ve
-//    p@class=nomDonationAmount, £5.00
-//    div@class=nomContent, h5=Thank You, Ve
-//    /p=Your donation has been successful and will make an immediate difference.
+//Monthly Payments:
+    private By monthly = By.id("donation_installment_period_monthly");
+    private By yearly = By.id("donation_installment_period_yearly");
+    private By collectionDay03 = By.id("donation_collection_day_03");
+    private By collectionDay05 = By.id("donation_collection_day_05");
+    private By collectionDay08 = By.id("donation_collection_day_08");
+    private By directDebitPage = By.xpath("//div[@class='payment-details__name']");
+    private By directDebitPage1 = By.xpath("//div[@class='payment-details__description u-text-center']");
+    private By accountSortCode = By.id("customer_bank_accounts_branch_code");
+    private By accountNumber = By.id("customer_bank_accounts_account_number");
+    private By setupDDbutton = By.id("submit-button-text");
+    private By submitButton = By.id("submit-button");
 
     public void acceptCookies() {
         //scrollDown();
@@ -319,9 +127,9 @@ public class donatePageObjects extends WebConnector {
         else if (option == "Monthly" & !IsElementSelected(monthlyDonation) ) {clickByAction(monthlyDonation);}
     }
 
-    public String pickDonationAmount(String singlemonthly, int randomNum) {
-        clickByAction(By.xpath(String.format(donationAmountPicker, singlemonthly, randomNum)));
-        return getValue(By.xpath(String.format(fixedDonationAmount, singlemonthly, randomNum)));
+    public String pickDonationAmount(String singleMonthly, int randomNum) {
+        clickByAction(By.xpath(String.format(donationAmountPicker, singleMonthly, randomNum)));
+        return getValue(By.xpath(String.format(fixedDonationAmount, singleMonthly, randomNum)));
     }
 
     public void clickOnDonateToday(int randomNum) {
@@ -336,10 +144,9 @@ public class donatePageObjects extends WebConnector {
         return getValue(donationAmount);
     }
 
-    public String selectTitle() {
-        return selectFromDropDown(title);
+    public void enterTitle(String t) {
+        typeText(title, t);
     }
-
 
     public void enterFirstName(String fname) {
         typeText(firstName, fname);
@@ -358,8 +165,28 @@ public class donatePageObjects extends WebConnector {
         typeText(contactNumber, phone);
     }
 
-    public String selectPromotedQuestion() {
-        return selectFromDropDown(promptedQuestion);
+    public void selectPromotedQuestion() {
+        List<String> promotedQ = Arrays.asList("Leaflet or insert", "Spoke to a fundraiser", "Letter",
+                "Online advert", "News story", "Social media", "TV advert", "Radio", "Other");
+        Random random = new Random();
+        clickByAction(By.xpath(String.format(promptedQuestion, promotedQ.get(random.nextInt(promotedQ.size())))));
+        //clickByAction(By.xpath(String.format(promptedQuestion, "Radio")));
+    }
+
+    public void selectKITemail() {
+        clickByAction(kit_email);
+    }
+
+    public void selectKITphone() {
+        clickByAction(kit_phone);
+    }
+
+    public void selectKITpost() {
+        clickByAction(kit_post);
+    }
+
+    public void selectKITsms() {
+        clickByAction(kit_sms);
     }
 
     public void enterAddressLine1(String line1) {
@@ -374,22 +201,67 @@ public class donatePageObjects extends WebConnector {
         typeText(town, Town);
     }
 
-    public void enterCounty(String County) {
-        typeText(county, County);
-    }
-
     public void enterPostCode(String postcode) {
         typeText(postCode, postcode);
     }
 
-    public void tickGiftAidCheckbox() {
-        tickCheckBox(giftAid);
+    public void pressTabOut() {
+        pressTabOut(postCode);
     }
 
-    public void clickOnDonateByCard() throws Throwable {
+    public void tickDonatingMyOwnMoneyOption() {
+        clickByAction(donatingMyOwnMoney);
+    }
+
+    public void tickGiftAidCheckbox() {
+        clickByAction(giftAid);
+    }
+
+    public void tickDonatingFromFundraisingEventOrCollectionOption() {
+        clickByAction(donatingFromFundraisingEventOrCollection);
+    }
+
+    public void enterInformationAboutTheFundraisingEvent(String info) {
+        typeText(informationAboutTheFundraisingEvent, info);
+    }
+
+    public void tickDonatingOnBehalfOfOrganisationOption() {
+        clickByAction(donatingOnBehalfOfOrganisation);
+    }
+
+    public void enterOrganisationName(String orgName) {
+        typeText(organisationName, orgName);
+    }
+
+    public void enterOrganisationAddress1(String address1) {
+        typeText(organisationAddress1, address1);
+    }
+
+    public void enterOrganisationAddress2(String address2) {
+        typeText(organisationAddress2, address2);
+    }
+
+    public void enterOrganisationTown(String town) {
+        typeText(organisationTown, town);
+    }
+
+    public void enterOrganisationCounty(String county) {
+        typeText(organisationCounty, county);
+    }
+
+    public void enterOrganisationPostcode(String postcode) {
+        typeText(organisationPostcode, postcode);
+    }
+
+    public void selectOrganisationCountry(String country) {
+        Select drpCountry = new Select((WebElement) organisationCountry);
+        drpCountry.selectByVisibleText("country");
+    }
+
+    public void clickOnDonateButton() throws Throwable {
         scrollEOP();
         Thread.sleep(1000);
-        clickByAction(donateByCard);
+        clickByAction(donateButton);
     }
 
     public void clickOnDonateByPaypal() {
@@ -397,11 +269,17 @@ public class donatePageObjects extends WebConnector {
     }
 
     public void clickOnConfirmDonationButton() throws Throwable {
+        scrollEOP();
+        Thread.sleep(1000);
+        clickByAction(confirmDonation);
+    }
+
+    public void clickOnContinueToPaymentButton() throws Throwable {
         focusOnWindow();
         Thread.sleep(1000);
         scrollEOP();
         Thread.sleep(1000);
-        clickByAction(confirmDonation);
+        clickByAction(continueToPayment);
     }
 
     public boolean isCardDetailsPage() {
@@ -424,11 +302,6 @@ public class donatePageObjects extends WebConnector {
         typeText(accountNumber, accNumber);
     }
 
-    public void switchToiFrame() {
-        scrollDown();
-        switchToIframe(iFrame);
-    }
-
     public void switchToDefaultFrame() {
         switchToDafaultframe();
     }
@@ -441,36 +314,92 @@ public class donatePageObjects extends WebConnector {
         typeText(cardNumber, "4929000000006");
     }
 
+    public void enterExpiryMonth() {
+        typeText(expiryMonth, "01");
+    }
+
+    public void enterExpiryYear() {
+        typeText(expiryYear, "25");
+    }
+
     public void enterSecurityCode() {
         typeText(securityCode, "123");
     }
 
-    public void clickContinueButton() {
+    public void clickConfirmCardDetailsButton() {
         //clickByAction(continueButton);
-        pressEnter(continueButton);
+        clickByAction(confirmCardDetailsButton);
     }
 
-    public void enterSecurityPassword() {
-        typeText(vendorPassword, "password");
+    public boolean IsDonationReview() {
+        return IsElementPresent(reviewPaymentTitle);
     }
 
-    public void clickVendorSubmit() {
-        pressEnter(vendorSubmit);
+    public String getDonationReviewTitle() {
+        return getText(reviewPaymentTitle);
     }
 
     public boolean IsDonationSuccessful() {
-        return IsElementPresent(successfullPaymentTitle);
+        return IsElementPresent(successfulPaymentTitle);
     }
 
     public String getDonationSuccessfulMsg() {
-        return getText(successfullPaymentTitle);
+        return getText(successfulPaymentTitle);
     }
 
     public String getDonationSuccessfulAmount() {
-        return getText(successfullPaymentAmount);
+        return getText(successfulPaymentAmount);
     }
 
     public void focusOnWindow() {
         driver.switchTo().defaultContent();
     }
+
+    public void selectMonthlyOption() {
+        clickByAction(monthly);
+    }
+
+    public void selectYearlyOption() {
+        clickByAction(yearly);
+    }
+
+    public void selectCollectionDay03Option() {
+        clickByAction(collectionDay03);
+    }
+
+    public void selectCollectionDay05Option() {
+        clickByAction(collectionDay05);
+    }
+
+    public void selectCollectionDay08Option() {
+        clickByAction(collectionDay08);
+    }
+
+    public String getDirectDebitPageTitle() {
+        return getText(directDebitPage);
+    }
+
+    public String getDirectDebitPageTitle1() {
+        return getText(directDebitPage1);
+    }
+
+    public void clickOnSetupDDbutton() {
+        clickByAction(setupDDbutton);
+    }
+
+    public void clickOnSubmitButton() {
+        clickByAction(submitButton);
+    }
+
+//    public void getWhatPromptedYouToGiveTodayOptionsPicker() {
+//        Random random = new Random();
+//        List<WebElement> elements = driver.findElements((promptedQuestionList));
+//        System.out.println("Number of elements:" +elements.size());
+//        //String number = String.valueOf(random.nextInt(elements.size()));
+//        //clickByAction(By.xpath(String.format(promptedQuestion, number)));
+//        clickByAction(By.xpath(String.format(promptedQuestion, random.nextInt(elements.size()))));
+//        //return (String.format(promptedQuestion, number));
+//    }
+
+
 }

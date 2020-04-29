@@ -13,7 +13,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 4633839063,
+  "duration": 4522275431,
   "status": "passed"
 });
 formatter.scenario({
@@ -99,28 +99,28 @@ formatter.match({
   "location": "donateStepDefs.i_am_on_donate_page()"
 });
 formatter.result({
-  "duration": 3840186568,
+  "duration": 2526316984,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_choose_single_donation_option()"
 });
 formatter.result({
-  "duration": 8116237334,
+  "duration": 8133721889,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_pick_a_donation_amount_from_Single_donations()"
 });
 formatter.result({
-  "duration": 7761587998,
+  "duration": 6710706434,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_enter_all_the_mandatory_donation_fields()"
 });
 formatter.result({
-  "duration": 5942747963,
+  "duration": 5685428767,
   "status": "passed"
 });
 formatter.match({
@@ -133,71 +133,71 @@ formatter.match({
   "location": "donateStepDefs.i_choose_donation_type_as(String)"
 });
 formatter.result({
-  "duration": 149838690,
+  "duration": 115964803,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_click_on_Donate_button()"
 });
 formatter.result({
-  "duration": 1855299718,
+  "duration": 1607335856,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_verify_the_Paysage_page_is_displayed()"
 });
 formatter.result({
-  "duration": 253945810,
+  "duration": 80794395,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_click_on_continue_to_payment()"
 });
 formatter.result({
-  "duration": 3709903327,
+  "duration": 3326321902,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_enter_all_the_mandatory_payment_details()"
 });
 formatter.result({
-  "duration": 555387750,
+  "duration": 576617873,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.click_on_Pay_now_button()"
 });
 formatter.result({
-  "duration": 5310006894,
+  "duration": 5384415864,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.review_the_order()"
 });
 formatter.result({
-  "duration": 58330644,
+  "duration": 55454365,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.click_on_Pay_now_button()"
 });
 formatter.result({
-  "duration": 5263197666,
+  "duration": 5337805191,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_verify_the_payment_successful_page_displayed_to_the_user()"
 });
 formatter.result({
-  "duration": 104215720,
+  "duration": 81916194,
   "status": "passed"
 });
 formatter.after({
-  "duration": 167288489,
+  "duration": 152975773,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1757357410,
+  "duration": 1569163635,
   "status": "passed"
 });
 formatter.scenario({
@@ -283,28 +283,28 @@ formatter.match({
   "location": "donateStepDefs.i_am_on_donate_page()"
 });
 formatter.result({
-  "duration": 1366525639,
+  "duration": 1971400994,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_choose_single_donation_option()"
 });
 formatter.result({
-  "duration": 8104292075,
+  "duration": 8088259981,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_pick_a_donation_amount_from_Single_donations()"
 });
 formatter.result({
-  "duration": 4589898758,
+  "duration": 4692437653,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_enter_all_the_mandatory_donation_fields()"
 });
 formatter.result({
-  "duration": 5888639946,
+  "duration": 5838064728,
   "status": "passed"
 });
 formatter.match({
@@ -317,71 +317,71 @@ formatter.match({
   "location": "donateStepDefs.i_choose_donation_type_as(String)"
 });
 formatter.result({
-  "duration": 70749200,
+  "duration": 59526070,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_click_on_Donate_button()"
 });
 formatter.result({
-  "duration": 1446431171,
+  "duration": 1583980545,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_verify_the_Paysage_page_is_displayed()"
 });
 formatter.result({
-  "duration": 225927220,
+  "duration": 57053743,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_click_on_continue_to_payment()"
 });
 formatter.result({
-  "duration": 2768357359,
+  "duration": 2958148105,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_enter_all_the_mandatory_payment_details()"
 });
 formatter.result({
-  "duration": 557257444,
+  "duration": 563101850,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.click_on_Pay_now_button()"
 });
 formatter.result({
-  "duration": 5355022956,
+  "duration": 5385708838,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.review_the_order()"
 });
 formatter.result({
-  "duration": 53518717,
+  "duration": 51467927,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.click_on_Pay_now_button()"
 });
 formatter.result({
-  "duration": 5269493220,
+  "duration": 5311295483,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_verify_the_payment_successful_page_displayed_to_the_user()"
 });
 formatter.result({
-  "duration": 89899704,
+  "duration": 82490346,
   "status": "passed"
 });
 formatter.after({
-  "duration": 158054366,
+  "duration": 126656528,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1990899970,
+  "duration": 1365112003,
   "status": "passed"
 });
 formatter.scenario({
@@ -467,28 +467,28 @@ formatter.match({
   "location": "donateStepDefs.i_am_on_donate_page()"
 });
 formatter.result({
-  "duration": 1371351986,
+  "duration": 1610128963,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_choose_single_donation_option()"
 });
 formatter.result({
-  "duration": 8077180586,
+  "duration": 8083823745,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_pick_a_donation_amount_from_Single_donations()"
 });
 formatter.result({
-  "duration": 4645552563,
+  "duration": 4550891969,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_enter_all_the_mandatory_donation_fields()"
 });
 formatter.result({
-  "duration": 5703944281,
+  "duration": 5642412543,
   "status": "passed"
 });
 formatter.match({
@@ -501,71 +501,71 @@ formatter.match({
   "location": "donateStepDefs.i_choose_donation_type_as(String)"
 });
 formatter.result({
-  "duration": 1202948097,
+  "duration": 1201687704,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_click_on_Donate_button()"
 });
 formatter.result({
-  "duration": 1756725641,
+  "duration": 1657342883,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_verify_the_Paysage_page_is_displayed()"
 });
 formatter.result({
-  "duration": 76343685,
+  "duration": 79747649,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_click_on_continue_to_payment()"
 });
 formatter.result({
-  "duration": 3853197848,
+  "duration": 2890439208,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_enter_all_the_mandatory_payment_details()"
 });
 formatter.result({
-  "duration": 583805727,
+  "duration": 554950027,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.click_on_Pay_now_button()"
 });
 formatter.result({
-  "duration": 6365204841,
+  "duration": 5361636191,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.review_the_order()"
 });
 formatter.result({
-  "duration": 55746410,
+  "duration": 49741920,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.click_on_Pay_now_button()"
 });
 formatter.result({
-  "duration": 6419793436,
+  "duration": 5288279172,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_verify_the_payment_successful_page_displayed_to_the_user()"
 });
 formatter.result({
-  "duration": 88598104,
+  "duration": 82477890,
   "status": "passed"
 });
 formatter.after({
-  "duration": 153401886,
+  "duration": 149473843,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1565230045,
+  "duration": 1403689663,
   "status": "passed"
 });
 formatter.scenario({
@@ -651,28 +651,28 @@ formatter.match({
   "location": "donateStepDefs.i_am_on_donate_page()"
 });
 formatter.result({
-  "duration": 1547703828,
+  "duration": 1815876323,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_choose_single_donation_option()"
 });
 formatter.result({
-  "duration": 8084948981,
+  "duration": 8078333736,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_pick_a_donation_amount_from_Single_donations()"
 });
 formatter.result({
-  "duration": 4556506902,
+  "duration": 4711204831,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_enter_all_the_mandatory_donation_fields()"
 });
 formatter.result({
-  "duration": 5655246639,
+  "duration": 5645412473,
   "status": "passed"
 });
 formatter.match({
@@ -685,71 +685,71 @@ formatter.match({
   "location": "donateStepDefs.i_choose_donation_type_as(String)"
 });
 formatter.result({
-  "duration": 720574516,
+  "duration": 701171850,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_click_on_Donate_button()"
 });
 formatter.result({
-  "duration": 1788602562,
+  "duration": 1499253353,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_verify_the_Paysage_page_is_displayed()"
 });
 formatter.result({
-  "duration": 58586125,
+  "duration": 214167188,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_click_on_continue_to_payment()"
 });
 formatter.result({
-  "duration": 3578970030,
+  "duration": 3063190505,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_enter_all_the_mandatory_payment_details()"
 });
 formatter.result({
-  "duration": 1104981798,
+  "duration": 562339956,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.click_on_Pay_now_button()"
 });
 formatter.result({
-  "duration": 5651155911,
+  "duration": 5332597855,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.review_the_order()"
 });
 formatter.result({
-  "duration": 52429903,
+  "duration": 49663265,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.click_on_Pay_now_button()"
 });
 formatter.result({
-  "duration": 5238922009,
+  "duration": 5315523787,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_verify_the_payment_successful_page_displayed_to_the_user()"
 });
 formatter.result({
-  "duration": 94510509,
+  "duration": 81658725,
   "status": "passed"
 });
 formatter.after({
-  "duration": 174088185,
+  "duration": 147682564,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1606121400,
+  "duration": 1329954288,
   "status": "passed"
 });
 formatter.scenario({
@@ -830,28 +830,28 @@ formatter.match({
   "location": "donateStepDefs.i_am_on_donate_page()"
 });
 formatter.result({
-  "duration": 1331504605,
+  "duration": 1519573305,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_choose_monthly_donation_option()"
 });
 formatter.result({
-  "duration": 5102991263,
+  "duration": 5100921563,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_pick_a_donation_amount_from_Monthly_donations()"
 });
 formatter.result({
-  "duration": 5726394612,
+  "duration": 5943337883,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_enter_all_direct_debit_mandatory_donation_fields()"
 });
 formatter.result({
-  "duration": 5570316908,
+  "duration": 5538642168,
   "status": "passed"
 });
 formatter.match({
@@ -864,64 +864,64 @@ formatter.match({
   "location": "donateStepDefs.i_choose_donation_type_as(String)"
 });
 formatter.result({
-  "duration": 123247927,
+  "duration": 126271997,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_click_on_Donate_button()"
 });
 formatter.result({
-  "duration": 1939367064,
+  "duration": 2015219326,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_verify_the_direct_debit_details_page_is_displayed()"
 });
 formatter.result({
-  "duration": 128349108,
+  "duration": 104520835,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_enter_all_the_mandatory_direct_debit_details()"
 });
 formatter.result({
-  "duration": 245821568,
+  "duration": 219459447,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_click_on_setup_direct_debit_button()"
 });
 formatter.result({
-  "duration": 5340004807,
+  "duration": 5388192818,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_verify_the_bank_details_confirmation_page_is_displayed()"
 });
 formatter.result({
-  "duration": 49564475,
+  "duration": 43141487,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.iClickOnConfirmDonationButton()"
 });
 formatter.result({
-  "duration": 6361476136,
+  "duration": 6488318169,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_verify_the_DD_setup_successful_page_displayed_to_the_user()"
 });
 formatter.result({
-  "duration": 91517075,
+  "duration": 72473403,
   "status": "passed"
 });
 formatter.after({
-  "duration": 180677768,
+  "duration": 168411128,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1614992613,
+  "duration": 1345084468,
   "status": "passed"
 });
 formatter.scenario({
@@ -1002,28 +1002,28 @@ formatter.match({
   "location": "donateStepDefs.i_am_on_donate_page()"
 });
 formatter.result({
-  "duration": 1932109777,
+  "duration": 1573139870,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_choose_monthly_donation_option()"
 });
 formatter.result({
-  "duration": 5104130958,
+  "duration": 5099396904,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_pick_a_donation_amount_from_Monthly_donations()"
 });
 formatter.result({
-  "duration": 5880817863,
+  "duration": 5764912290,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_enter_all_direct_debit_mandatory_donation_fields()"
 });
 formatter.result({
-  "duration": 5552813151,
+  "duration": 5537398321,
   "status": "passed"
 });
 formatter.match({
@@ -1036,64 +1036,64 @@ formatter.match({
   "location": "donateStepDefs.i_choose_donation_type_as(String)"
 });
 formatter.result({
-  "duration": 77631483,
+  "duration": 68575567,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_click_on_Donate_button()"
 });
 formatter.result({
-  "duration": 3401469668,
+  "duration": 2237545281,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_verify_the_direct_debit_details_page_is_displayed()"
 });
 formatter.result({
-  "duration": 122125830,
+  "duration": 110752709,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_enter_all_the_mandatory_direct_debit_details()"
 });
 formatter.result({
-  "duration": 270316364,
+  "duration": 225532984,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_click_on_setup_direct_debit_button()"
 });
 formatter.result({
-  "duration": 5420344367,
+  "duration": 5309706416,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_verify_the_bank_details_confirmation_page_is_displayed()"
 });
 formatter.result({
-  "duration": 49335350,
+  "duration": 44819968,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.iClickOnConfirmDonationButton()"
 });
 formatter.result({
-  "duration": 6953955152,
+  "duration": 6402946608,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_verify_the_DD_setup_successful_page_displayed_to_the_user()"
 });
 formatter.result({
-  "duration": 91698653,
+  "duration": 78576147,
   "status": "passed"
 });
 formatter.after({
-  "duration": 176964566,
+  "duration": 152250855,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1474483607,
+  "duration": 1369296327,
   "status": "passed"
 });
 formatter.scenario({
@@ -1174,28 +1174,28 @@ formatter.match({
   "location": "donateStepDefs.i_am_on_donate_page()"
 });
 formatter.result({
-  "duration": 4011676631,
+  "duration": 1525256080,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_choose_monthly_donation_option()"
 });
 formatter.result({
-  "duration": 5102759316,
+  "duration": 5101719671,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_pick_a_donation_amount_from_Monthly_donations()"
 });
 formatter.result({
-  "duration": 6007881655,
+  "duration": 5706012888,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_enter_all_direct_debit_mandatory_donation_fields()"
 });
 formatter.result({
-  "duration": 5511600141,
+  "duration": 5496514091,
   "status": "passed"
 });
 formatter.match({
@@ -1208,64 +1208,64 @@ formatter.match({
   "location": "donateStepDefs.i_choose_donation_type_as(String)"
 });
 formatter.result({
-  "duration": 1202856215,
+  "duration": 1188155120,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_click_on_Donate_button()"
 });
 formatter.result({
-  "duration": 1930971269,
+  "duration": 2010189292,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_verify_the_direct_debit_details_page_is_displayed()"
 });
 formatter.result({
-  "duration": 104179440,
+  "duration": 92012875,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_enter_all_the_mandatory_direct_debit_details()"
 });
 formatter.result({
-  "duration": 229457673,
+  "duration": 239760632,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_click_on_setup_direct_debit_button()"
 });
 formatter.result({
-  "duration": 5281633192,
+  "duration": 5257014983,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_verify_the_bank_details_confirmation_page_is_displayed()"
 });
 formatter.result({
-  "duration": 49769226,
+  "duration": 44467448,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.iClickOnConfirmDonationButton()"
 });
 formatter.result({
-  "duration": 6371174806,
+  "duration": 6517679711,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_verify_the_DD_setup_successful_page_displayed_to_the_user()"
 });
 formatter.result({
-  "duration": 86426426,
+  "duration": 78375660,
   "status": "passed"
 });
 formatter.after({
-  "duration": 139224923,
+  "duration": 146831133,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1600678840,
+  "duration": 1461240662,
   "status": "passed"
 });
 formatter.scenario({
@@ -1346,28 +1346,28 @@ formatter.match({
   "location": "donateStepDefs.i_am_on_donate_page()"
 });
 formatter.result({
-  "duration": 1274796527,
+  "duration": 1640411650,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_choose_monthly_donation_option()"
 });
 formatter.result({
-  "duration": 5100665308,
+  "duration": 5102466589,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_pick_a_donation_amount_from_Monthly_donations()"
 });
 formatter.result({
-  "duration": 5820097118,
+  "duration": 5719206923,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_enter_all_direct_debit_mandatory_donation_fields()"
 });
 formatter.result({
-  "duration": 5544143593,
+  "duration": 5488167087,
   "status": "passed"
 });
 formatter.match({
@@ -1380,60 +1380,60 @@ formatter.match({
   "location": "donateStepDefs.i_choose_donation_type_as(String)"
 });
 formatter.result({
-  "duration": 729419103,
+  "duration": 711620805,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_click_on_Donate_button()"
 });
 formatter.result({
-  "duration": 1882684605,
+  "duration": 2024599746,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_verify_the_direct_debit_details_page_is_displayed()"
 });
 formatter.result({
-  "duration": 114011785,
+  "duration": 97560254,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_enter_all_the_mandatory_direct_debit_details()"
 });
 formatter.result({
-  "duration": 244238906,
+  "duration": 211539734,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_click_on_setup_direct_debit_button()"
 });
 formatter.result({
-  "duration": 5298176559,
+  "duration": 5265724091,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_verify_the_bank_details_confirmation_page_is_displayed()"
 });
 formatter.result({
-  "duration": 48292285,
+  "duration": 45581085,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.iClickOnConfirmDonationButton()"
 });
 formatter.result({
-  "duration": 6339777938,
+  "duration": 6490377181,
   "status": "passed"
 });
 formatter.match({
   "location": "donateStepDefs.i_verify_the_DD_setup_successful_page_displayed_to_the_user()"
 });
 formatter.result({
-  "duration": 87162374,
+  "duration": 81404442,
   "status": "passed"
 });
 formatter.after({
-  "duration": 153583713,
+  "duration": 164779293,
   "status": "passed"
 });
 });

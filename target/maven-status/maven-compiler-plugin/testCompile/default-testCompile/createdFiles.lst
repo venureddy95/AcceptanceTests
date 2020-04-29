@@ -1,0 +1,4 @@
+com/barnardos/stepdefs/donateStepDefs.class
+com/barnardos/util/WebConnector.class
+com/barnardos/runners/donateRunner.class
+com/barnardos/pageobjects/donatePageObjects.class

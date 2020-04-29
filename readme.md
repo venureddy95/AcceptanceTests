@@ -1,6 +1,6 @@
 ## To run tests from command line
 
-mvn clean verify -Dit.test=donate
+mvn clean verify -Dit.test=donateRunner
 
 ## Installation process
 
@@ -14,38 +14,39 @@ https://www.jetbrains.com/idea/download/other.html
 
 -This is a Maven project, using Java framework with Cucumber gerkin language.
 
+#src/test/resources/features
 -A Feature File is an entry point to the Cucumber tests. This is a file where you will describe your
 tests in Descriptive language (Like English). It is an essential part of Cucumber, as it serves as an
 automation test script as well as live documents.
-                        src/test/resources/features
 
+#src/test/java/com/barnardos/stepdefs
 -A Step Definition is a Java method Kotlin function JavaScript function Ruby block with an
 expression that links it to one or more Gherkin steps. When Cucumber executes a Gherkin step in a scenario,
 it will look for a matching step definition to execute.
-                        src/test/java/com/barnardos/stepdefs
 
+#src/test/java/com/barnardos/pageobjects
 -Page Object Model is a Design Pattern which has become popular in Selenium Test Automation.
 It is widely used design pattern in Selenium for enhancing test maintenance and reducing code duplication.
 A page object is an object-oriented class that serves as an interface to a page of your Application Under Test(AUT).
 Script maintenance looks easy. In future, if there is a change in the web element, we need to make the
 change in just 1 class file and not 10 different scripts. This approach is called Page Object Model(POM).
 It helps make the code more readable, maintainable, and reusable.
-                        src/test/java/com/barnardos/pageobjects
 
+#src/test/java/com/barnardos/util
 -All the selenium web connectors are placed in one place for enhancing selenium commands maintenance and
 reducing code duplication.
-                        src/test/java/com/barnardos/util
 
+#src/test/java/com/barnardos/runners
 -In very simple terms, Cucumber test runner class is one of the many mechanisms using which you can
 run Cucumber feature file.
-                        src/test/java/com/barnardos/runners
 
+#src/test/resources/screenshots
 -Screen shots are captured for failing tests to analyse exactly at what point and place the test
 stopped executing and failed.
-                        src/test/resources/screenshots
 
+#target/cucumber-reports
 -Test Reports are really useful and can help in analysing the pass and failed scenarios.
-                        target/cucumber-reports
+
 
 
 

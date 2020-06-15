@@ -107,7 +107,7 @@ public class donateStepDefs {
         Thread.sleep(1000);
         donatePO.enterFirstName("Testing");
         donatePO.enterLastName("Single");
-        donatePO.enterEmail("Single.Testing@example.com");
+        donatePO.enterEmail("Single.Testing@barnardos.org.uk");
         donatePO.enterContactNumber("07919191919");
         donatePO.enterAddressLine1("88");
         donatePO.enterAddressLine2("Tavistock Square");
@@ -130,7 +130,7 @@ public class donateStepDefs {
         Thread.sleep(1000);
         donatePO.enterFirstName("Testing");
         donatePO.enterLastName("Monthly");
-        donatePO.enterEmail("Monthly.Testing@example.com");
+        donatePO.enterEmail("Monthly.Testing@barnardos.org.uk");
         donatePO.enterContactNumber("07919191919");
         donatePO.enterAddressLine1("88");
         donatePO.enterAddressLine2("Tavistock Square");

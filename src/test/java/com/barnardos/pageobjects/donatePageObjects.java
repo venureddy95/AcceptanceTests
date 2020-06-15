@@ -21,14 +21,14 @@ public class donatePageObjects extends WebConnector {
     private By donationAmount = By.id("donation_amount");
     private By title = By.id("donation_title");
     private By firstName = By.id("donation_first_name");
-    private By lastName = By.id("donation_surname");
+    private By lastName = By.id("donation_last_name");
     private By emailAddress = By.id("donation_email_address");
     private By contactNumber = By.id("donation_phone_number");
     private String promptedQuestion = ("//label[contains(.,'%s')]");
-    private By AddressLine1 = By.id("donation_mailing_street_1");
-    private By AddressLine2 = By.id("donation_mailing_street_2");
-    private By town = By.id("donation_mailing_city");
-    private By postCode = By.id("donation_mailing_postal_code");
+    private By AddressLine1 = By.id("donation_address_line_1");
+    private By AddressLine2 = By.id("donation_address_line_2");
+    private By town = By.id("donation_town");
+    private By postCode = By.id("donation_postcode");
     private By country = By.id("donation_mailing_country");
     private By u16Age = By.id("donation_under_16");
     private By kit_email = By.id("donation_email_consent");
@@ -68,11 +68,11 @@ public class donatePageObjects extends WebConnector {
 
 
 //Monthly Payments:
-    private By monthly = By.id("donation_installment_period_monthly");
-    private By yearly = By.id("donation_installment_period_yearly");
-    private By collectionDay03 = By.id("donation_collection_day_03");
-    private By collectionDay05 = By.id("donation_collection_day_05");
-    private By collectionDay08 = By.id("donation_collection_day_08");
+    private By monthly = By.id("donation_frequency_monthly");
+    private By yearly = By.id("donation_frequency_yearly");
+    private By collectionDay03 = By.id("donation_day_03");
+    private By collectionDay05 = By.id("donation_day_05");
+    private By collectionDay08 = By.id("donation_day_08");
     private By directDebitPage = By.xpath("//div[@class='payment-details__name']");
     private By directDebitPage1 = By.xpath("//div[@class='payment-details__description u-text-center']");
     private By accountSortCode = By.id("customer_bank_accounts_branch_code");
@@ -166,11 +166,12 @@ public class donatePageObjects extends WebConnector {
     }
 
     public void selectPromotedQuestion() {
-        List<String> promotedQ = Arrays.asList("Leaflet or insert", "Spoke to a fundraiser", "Letter",
-                "Online advert", "News story", "Social media", "TV advert", "Radio", "Other");
+        //"Spoke to a fundraiser" has been replaced by "Billboard"
+        List<String> promotedQ = Arrays.asList("Leaflet or insert",  "Letter", "Other", "Billboard",
+                "Online advert", "News story", "Social media", "TV advert", "Radio");
         Random random = new Random();
         clickByAction(By.xpath(String.format(promptedQuestion, promotedQ.get(random.nextInt(promotedQ.size())))));
-        //clickByAction(By.xpath(String.format(promptedQuestion, "Radio")));
+        //clickByAction(By.xpath(String.format(promptedQuestion, "Billboard")));
     }
 
     public void selectKITemail() {

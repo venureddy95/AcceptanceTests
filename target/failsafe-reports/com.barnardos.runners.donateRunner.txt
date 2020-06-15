@@ -1,4 +1,10 @@
 -------------------------------------------------------------------------------
 Test set: com.barnardos.runners.donateRunner
 -------------------------------------------------------------------------------
-Tests run: 108, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 297.417 sec - in com.barnardos.runners.donateRunner
+Tests run: 108, Failures: 2, Errors: 0, Skipped: 8, Time elapsed: 486.967 sec <<< FAILURE! - in com.barnardos.runners.donateRunner
+And I enter all direct debit mandatory donation fields(Scenario: Donation on behalf of company / school / organisation using direct debit)  Time elapsed: 0.01 sec  <<< FAILURE!
+java.lang.AssertionError: Donation amount in the details page is not as expected, Plz check: 
+
+Scenario: Donation on behalf of company / school / organisation using direct debit  Time elapsed: 0.01 sec  <<< FAILURE!
+java.lang.AssertionError: Donation amount in the details page is not as expected, Plz check: 
+

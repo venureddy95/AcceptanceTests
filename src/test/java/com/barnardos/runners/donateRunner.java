@@ -8,6 +8,8 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/features/",
         tags = "@donate",
+        //tags = "@donateSingle",
+        //tags = "@donateMonthly",
         glue = "com.barnardos.stepdefs",
         plugin = {"pretty", "html:target/cucumber-reports"}
 )
